@@ -41,14 +41,15 @@ corresponding instants, so care must be taken to avoid confusion.
 
 package Time::TCB;
 
+{ use 5.006; }
 use warnings;
 use strict;
 
 use Math::BigRat 0.03;
 
-our $VERSION = "0.000";
+our $VERSION = "0.001";
 
-use base qw(Exporter);
+use parent "Exporter";
 our @EXPORT_OK = qw(tcb_instant_to_mjd tcb_mjd_to_instant);
 
 =head1 FUNCTIONS
@@ -98,7 +99,9 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2010 Andrew Main (Zefram) <zefram@fysh.org>
+
+=head1 LICENSE
 
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
