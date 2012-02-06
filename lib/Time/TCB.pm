@@ -45,9 +45,9 @@ package Time::TCB;
 use warnings;
 use strict;
 
-use Math::BigRat 0.03;
+use Math::BigRat 0.13;
 
-our $VERSION = "0.001";
+our $VERSION = "0.002";
 
 use parent "Exporter";
 our @EXPORT_OK = qw(tcb_instant_to_mjd tcb_mjd_to_instant);
@@ -99,7 +99,7 @@ Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 COPYRIGHT
 
-Copyright (C) 2006, 2010 Andrew Main (Zefram) <zefram@fysh.org>
+Copyright (C) 2006, 2010, 2012 Andrew Main (Zefram) <zefram@fysh.org>
 
 =head1 LICENSE
 
